@@ -1,0 +1,631 @@
+Started GET "/" for ::1 at 2023-08-25 05:50:49 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 940)
+Completed 200 OK in 9ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 9876)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-08-25 05:50:49 -0400
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2023-08-25 05:50:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/apple-touch-icon.png" for ::1 at 2023-08-25 05:50:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20230825095921)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230825095921"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-25 10:00:12.046256"], ["updated_at", "2023-08-25 10:00:12.046256"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "products"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230825095921)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-25 10:03:07.354721"], ["updated_at", "2023-08-25 10:03:07.354721"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8e438ebf7857cea72b30788d16574e9bb095b90e"], ["created_at", "2023-08-25 10:03:07.356761"], ["updated_at", "2023-08-25 10:03:07.356761"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230825095921)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-25 10:03:07.360741"], ["updated_at", "2023-08-25 10:03:07.360741"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-08-25 10:03:07.362096"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8e438ebf7857cea72b30788d16574e9bb095b90e"], ["created_at", "2023-08-25 10:03:07.363700"], ["updated_at", "2023-08-25 10:03:07.363700"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230825095921)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-25 10:03:56.512885"], ["updated_at", "2023-08-25 10:03:56.512885"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "33d6643a57b14ae512884bf645a4a8958efb917b"], ["created_at", "2023-08-25 10:03:56.514983"], ["updated_at", "2023-08-25 10:03:56.514983"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230825095921)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-25 10:03:56.518382"], ["updated_at", "2023-08-25 10:03:56.518382"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-08-25 10:03:56.519753"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "33d6643a57b14ae512884bf645a4a8958efb917b"], ["created_at", "2023-08-25 10:03:56.521083"], ["updated_at", "2023-08-25 10:03:56.521083"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230825095921)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-25 10:04:01.462481"], ["updated_at", "2023-08-25 10:04:01.462481"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "33d6643a57b14ae512884bf645a4a8958efb917b"], ["created_at", "2023-08-25 10:04:01.464596"], ["updated_at", "2023-08-25 10:04:01.464596"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230825095921)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-25 10:04:01.468509"], ["updated_at", "2023-08-25 10:04:01.468509"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-08-25 10:04:01.469893"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "33d6643a57b14ae512884bf645a4a8958efb917b"], ["created_at", "2023-08-25 10:04:01.471228"], ["updated_at", "2023-08-25 10:04:01.471228"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20230825100507)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230825100507"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/products" for ::1 at 2023-08-25 06:32:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#create as */*
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms | Allocations: 21563)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products?{=&name=%22sdfdsfds%22,&description=%22asfdfdsf%22}" for ::1 at 2023-08-25 06:35:53 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"{"=>"", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\"}"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 159)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products?{products={&name=%22sdfdsfds%22,&description=%22asfdfdsf%22}}" for ::1 at 2023-08-25 06:36:13 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"{products"=>"{", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\"}}"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 163)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product
+Did you mean?  {products):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products?products={&name=%22sdfdsfds%22,&description=%22asfdfdsf%22}" for ::1 at 2023-08-25 06:36:25 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"products"=>"{", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\"}"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 153)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product
+Did you mean?  products):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products?products={&name=%22sdfdsfds%22,&description=%22asfdfdsf%22}" for ::1 at 2023-08-25 06:37:44 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"products"=>"{", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\"}"}
+Completed 422 Unprocessable Entity in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 18250)
+
+
+Started POST "/products?products={&name=%22sdfdsfds%22,&description=%22asfdfdsf%22,&price=123.45}" for ::1 at 2023-08-25 06:38:25 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"products"=>"{", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\",", "price"=>"123.45}"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started POST "/products?products={&name=%22sdfdsfds%22,&description=%22asfdfdsf%22,&price=123.45}" for ::1 at 2023-08-25 06:38:30 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"products"=>"{", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\",", "price"=>"123.45}"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started POST "/products?products={&name=%22sdfdsfds%22,&description=%22asfdfdsf%22,&price=123.45}" for ::1 at 2023-08-25 06:39:13 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"products"=>"{", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\",", "price"=>"123.45}"}
+Completed 500 Internal Server Error in 57635ms (ActiveRecord: 0.4ms | Allocations: 201631)
+
+
+  
+SystemExit (exit):
+  
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `exit'
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `create'
+app/controllers/products_controller.rb:6:in `create'
+Started POST "/products?product={&name=%22sdfdsfds%22,&description=%22asfdfdsf%22,&price=123.45}" for ::1 at 2023-08-25 06:40:13 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>"{", "name"=>"\"sdfdsfds\",", "description"=>"\"asfdfdsf\",", "price"=>"123.45}"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1285)
+
+
+  
+NoMethodError (undefined method `permit' for "{":String):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:47:58 -0400
+Processing by ProductsController#create as */*
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 1054)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:48:06 -0400
+Processing by ProductsController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 145)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:48:42 -0400
+Processing by ProductsController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:49:03 -0400
+Processing by ProductsController#create as */*
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 3237)
+
+
+Started POST "/products" for ::1 at 2023-08-25 06:50:04 -0400
+Processing by ProductsController#create as */*
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 3578)
+
+
+Started POST "/products" for ::1 at 2023-08-25 06:50:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#create as */*
+Completed 500 Internal Server Error in 22085ms (ActiveRecord: 0.2ms | Allocations: 223818)
+
+
+  
+SystemExit (exit):
+  
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `exit'
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `create'
+app/controllers/products_controller.rb:6:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:51:02 -0400
+Processing by ProductsController#create as */*
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 787)
+
+
+Started POST "/products" for ::1 at 2023-08-25 06:51:16 -0400
+Processing by ProductsController#create as */*
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3665)
+
+
+Started POST "/products" for ::1 at 2023-08-25 06:52:00 -0400
+Processing by ProductsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1104)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:16:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products?{=&%22name%22=%22sdfdsfds%22,&%22description%22=%22asfdfdsf%22,&%22price%22=123.45&}=" for ::1 at 2023-08-25 06:53:22 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"{"=>"", "\"name\""=>"\"sdfdsfds\",", "\"description\""=>"\"asfdfdsf\",", "\"price\""=>"123.45", "}"=>""}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 161)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:16:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:53:36 -0400
+Processing by ProductsController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 131)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:16:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started GET "/" for ::1 at 2023-08-25 06:53:42 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 828)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 7270)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-08-25 06:53:48 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actionpack-7.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 4.3ms | Allocations: 5159)
+  Rendered /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actionpack-7.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.3ms | Allocations: 1972)
+  Rendered /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 10.9ms | Allocations: 11198)
+  Rendered layout /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/layouts/application.html.erb (Duration: 11.5ms | Allocations: 11643)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 14023)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-08-25 06:53:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/products" for ::1 at 2023-08-25 06:54:51 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"skhgfdkshgf", "description"=>"sdfhjdgfhdsgfjhdsfgsjdhfgdsjh", "price"=>"123.45"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 179)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:16:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:55:06 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"skhgfdkshgf", "description"=>"sdfhjdgfhdsgfjhdsfgsjdhfgdsjh", "price"=>"123.45"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1070)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:55:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"skhgfdkshgf", "description"=>"sdfhjdgfhdsgfjhdsfgsjdhfgdsjh", "price"=>"123.45"}
+Completed 500 Internal Server Error in 47551ms (ActiveRecord: 0.0ms | Allocations: 212284)
+
+
+  
+SystemExit (exit):
+  
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `exit'
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `product_params'
+app/controllers/products_controller.rb:16:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 06:56:10 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"skhgfdkshgf", "description"=>"sdfhjdgfhdsgfjhdsfgsjdhfgdsjh", "price"=>"123.45"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 216)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:17:in `product_params'
+app/controllers/products_controller.rb:5:in `create'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sdssf"], ["description", "sdfdfdsf"], ["price", 123.45], ["created_at", "2023-08-25 11:00:52.542946"], ["updated_at", "2023-08-25 11:00:52.542946"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/products" for ::1 at 2023-08-25 07:02:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"skhgfdkshgf", "description"=>"sdfhjdgfhdsgfjhdsfgsjdhfgdsjh", "price"=>"123.45"}
+Completed 500 Internal Server Error in 33410ms (ActiveRecord: 0.0ms | Allocations: 208120)
+
+
+  
+SystemExit (exit):
+  
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `exit'
+(rdbg)//Users/panda/cat_app/app/controllers/products_controller.rb:1:in `create'
+app/controllers/products_controller.rb:5:in `create'
+Started POST "/products" for ::1 at 2023-08-25 07:03:41 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"skhgfdkshgf", "description"=>"sdfhjdgfhdsgfjhdsfgsjdhfgdsjh", "price"=>"123.45"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:7:in `create'
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "skhgfdkshgf"], ["description", "sdfhjdgfhdsgfjhdsfgsjdhfgdsjh"], ["price", 123.45], ["created_at", "2023-08-25 11:03:41.718135"], ["updated_at", "2023-08-25 11:03:41.718135"]]
+  ↳ app/controllers/products_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms | Allocations: 22032)
+
+
+  
+NameError (uninitialized constant ProductsController::Notifier):
+  
+app/controllers/products_controller.rb:8:in `create'
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Started PUT "/products/1" for ::1 at 2023-08-25 07:10:12 -0400
+  
+ActionController::RoutingError (No route matches [PUT] "/products/1"):
+  
+Started POST "/products/1" for ::1 at 2023-08-25 07:10:23 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/products/1"):
+  
+Started GET "/" for ::1 at 2023-08-25 07:10:29 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 850)
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 7496)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-08-25 07:10:35 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actionpack-7.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 3.6ms | Allocations: 5147)
+  Rendered /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actionpack-7.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.7ms | Allocations: 1783)
+  Rendered /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 8.9ms | Allocations: 10655)
+  Rendered layout /Users/panda/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.7.2/lib/rails/templates/layouts/application.html.erb (Duration: 9.3ms | Allocations: 11089)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 13034)
+
+
+Started PUT "/products/1" for ::1 at 2023-08-25 07:10:56 -0400
+  
+ActionController::RoutingError (No route matches [PUT] "/products/1"):
+  
+Started PATCH "/products/1" for ::1 at 2023-08-25 07:11:05 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/products/1"):
+  
+Started PATCH "/products" for ::1 at 2023-08-25 07:11:21 -0400
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"one", "description"=>"one", "price"=>"123.45", "id"=>"1"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1894)
+
+
+  
+NoMethodError (undefined method `set_contact' for #<ProductsController:0x0000000000f7f8>
+Did you mean?  set_trace_func):
+  
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:180:in `block (2 levels) in halting_and_conditional'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:181:in `block in halting_and_conditional'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:106:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started PATCH "/products" for ::1 at 2023-08-25 07:12:23 -0400
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"one", "description"=>"one", "price"=>"123.45", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `set_product'
+[31mUnpermitted parameter: :id. Context: { controller: ProductsController, action: update, request: #<ActionDispatch::Request:0x0000000120ab3198>, params: {"name"=>"one", "description"=>"one", "price"=>"123.45", "id"=>"1", "controller"=>"products", "action"=>"update"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:15:in `update'
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "name" = ?, "description" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["name", "one"], ["description", "one"], ["updated_at", "2023-08-25 11:12:23.564160"], ["id", 1]]
+  ↳ app/controllers/products_controller.rb:15:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms | Allocations: 8467)
+
+
+  
+NameError (uninitialized constant ProductsController::Notifier):
+  
+app/controllers/products_controller.rb:16:in `update'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started PATCH "/products" for ::1 at 2023-08-25 07:17:24 -0400
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"two", "description"=>"two", "price"=>"123.45", "id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `set_product'
+[31mUnpermitted parameter: :id. Context: { controller: ProductsController, action: update, request: #<ActionDispatch::Request:0x0000000107206680>, params: {"name"=>"two", "description"=>"two", "price"=>"123.45", "id"=>"2", "controller"=>"products", "action"=>"update"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:15:in `update'
+  [1m[36mProduct Update (0.2ms)[0m  [1m[33mUPDATE "products" SET "name" = ?, "description" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["name", "two"], ["description", "two"], ["updated_at", "2023-08-25 11:17:24.423139"], ["id", 2]]
+  ↳ app/controllers/products_controller.rb:15:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms | Allocations: 7879)
+
+
+  
+NameError (uninitialized constant ProductsController::Notifier):
+  
+app/controllers/products_controller.rb:16:in `update'
+Started PATCH "/products" for ::1 at 2023-08-25 07:17:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"two", "description"=>"two", "price"=>"123.45", "id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `set_product'
+[31mUnpermitted parameter: :id. Context: { controller: ProductsController, action: update, request: #<ActionDispatch::Request:0x000000010aa04258>, params: {"name"=>"two", "description"=>"two", "price"=>"123.45", "id"=>"2", "controller"=>"products", "action"=>"update"} }[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms | Allocations: 41441)
+
+
+  
+NoMethodError (undefined method `send_product' for #<Notifier:0x000000014ce888c8 @message_notifier=#<Slack::Notifier:0x000000014ce885f8 @endpoint=#<URI::HTTPS https://hooks.slack.com/services/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>, @_config=#<Slack::Notifier::Config:0x000000014ce83288 @http_client=Slack::Notifier::Util::HTTPClient, @defaults={:channel=>"#qa", :username=>"notifier"}, @middleware=[:format_message, :format_attachments, :at, :channels]>, @middleware=#<Slack::Notifier::PayloadMiddleware::Stack:0x000000014ce82888 @notifier=#<Slack::Notifier:0x000000014ce885f8 ...>, @stack=[#<Slack::Notifier::PayloadMiddleware::FormatMessage:0x000000014ce81e38 @notifier=#<Slack::Notifier:0x000000014ce885f8 ...>, @options={:formats=>[:html, :markdown]}>, #<Slack::Notifier::PayloadMiddleware::FormatAttachments:0x000000014ce79580 @notifier=#<Slack::Notifier:0x000000014ce885f8 ...>, @options={:formats=>[:html, :markdown]}>, #<Slack::Notifier::PayloadMiddleware::At:0x000000014ce78e50 @notifier=#<Slack::Notifier:0x000000014ce885f8 ...>, @options={:at=>[]}>, #<Slack::Notifier::PayloadMiddleware::Channels:0x000000014ce78a18 @notifier=#<Slack::Notifier:0x000000014ce885f8 ...>, @options={}>]>>>):
+  
+app/controllers/products_controller.rb:16:in `update'
+Started PATCH "/products" for ::1 at 2023-08-25 07:18:43 -0400
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"two", "description"=>"two", "price"=>"123.45", "id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `set_product'
+[31mUnpermitted parameter: :id. Context: { controller: ProductsController, action: update, request: #<ActionDispatch::Request:0x000000012bcf7bb0>, params: {"name"=>"two", "description"=>"two", "price"=>"123.45", "id"=>"2", "controller"=>"products", "action"=>"update"} }[0m
+Completed 201 Created in 314ms (Views: 1.3ms | ActiveRecord: 0.8ms | Allocations: 6545)
+
+
+Started POST "/products" for ::1 at 2023-08-25 07:21:12 -0400
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"Three", "description"=>"Three Three Three Three", "price"=>"123.45"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:6:in `create'
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Three"], ["description", "Three Three Three Three"], ["price", 123.45], ["created_at", "2023-08-25 11:21:12.372194"], ["updated_at", "2023-08-25 11:21:12.372194"]]
+  ↳ app/controllers/products_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:6:in `create'
+Completed 201 Created in 325ms (Views: 1.1ms | ActiveRecord: 1.1ms | Allocations: 6927)
+
+
+Started PATCH "/products" for ::1 at 2023-08-25 07:24:25 -0400
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"Three 3", "description"=>"Three 3 Three 3 Three 3 Three 3", "price"=>"3123.45", "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `set_product'
+[31mUnpermitted parameter: :id. Context: { controller: ProductsController, action: update, request: #<ActionDispatch::Request:0x000000012bf4e058>, params: {"name"=>"Three 3", "description"=>"Three 3 Three 3 Three 3 Three 3", "price"=>"3123.45", "id"=>"3", "controller"=>"products", "action"=>"update"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:15:in `update'
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "name" = ?, "description" = ?, "price" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["name", "Three 3"], ["description", "Three 3 Three 3 Three 3 Three 3"], ["price", 3123.45], ["updated_at", "2023-08-25 11:24:25.444836"], ["id", 3]]
+  ↳ app/controllers/products_controller.rb:15:in `update'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:15:in `update'
+Completed 201 Created in 321ms (Views: 1.1ms | ActiveRecord: 1.6ms | Allocations: 4305)
+
+
